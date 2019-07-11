@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Think Serverless`,
     author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Interviews and stories about the future of software development, using Serverless technology.`,
+    siteUrl: `https://thinkserverless.dev/`,
     social: {
-      twitter: `kylemathews`,
+      newsletter: "https://buttondown.email/thinkserverless",
+      twitter: `_serverless`,
     },
   },
   plugins: [
@@ -57,13 +58,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Think Serverless`,
+        short_name: `Think Serverless`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#1C2541`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo_bg.png`,
       },
     },
     `gatsby-plugin-offline`,

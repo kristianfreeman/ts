@@ -16,36 +16,50 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author, description, social } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
+          <React.Fragment>
+            <div
               style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
+                display: `flex`,
+                marginBottom: rhythm(0.5),
               }}
-              imgStyle={{
-                borderRadius: `50%`,
+            >
+              <Image
+                fixed={data.avatar.childImageSharp.fixed}
+                alt={author}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                  borderRadius: `100%`,
+                }}
+                imgStyle={{
+                  borderRadius: `50%`,
+                }}
+              />
+              <p>
+                {description}
+                {` `}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                  Follow us on Twitter!
+                </a>
+              </p>
+            </div>
+            <div
+              style={{
+                display: `flex`,
+                marginBottom: rhythm(2.5),
               }}
-            />
-            <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
-          </div>
+            >
+              <p>
+                <a href={social.newsletter}>
+                  Join our mailing list to get new interviews and stories
+                  directly in your inbox.
+                </a>
+              </p>
+            </div>
+          </React.Fragment>
         )
       }}
     />
@@ -54,7 +68,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/logo_nobg.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
@@ -64,7 +78,9 @@ const bioQuery = graphql`
     site {
       siteMetadata {
         author
+        description
         social {
+          newsletter
           twitter
         }
       }
