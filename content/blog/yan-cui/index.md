@@ -22,7 +22,7 @@ Being able to focus on the things that my users want, rather than all the yak sh
 
 Recently, I built a self-healing kinesis function with a client in order to satisfy some unusual operational constraints. It was a fun exercise, and you can read about it [here](https://theburningmonk.com/2019/05/a-self-healing-kinesis-function-that-adapts-its-throughput-based-on-performance/).
 
-#### What do you see as the essential elements of a serverless architecture?
+#### How would you define a serverless architecture?
 
 I see a "serverless architecture" as one where you are not responsible for managing the infrastructure - the underlying servers, the machine images, patching the OS, configuring load balancing, auto-scaling and so on. These architectures evolve around function-as-a-service (FaaS) platforms such as AWS Lambda, where we focus on writing the business logic and let the cloud provider handle the infrastructure. Many of these architectures are also designed around and driven by events - e.g. a user logging into the application, an IOT sensor recording a new data point, or a file being uploaded to S3, etc.
 
