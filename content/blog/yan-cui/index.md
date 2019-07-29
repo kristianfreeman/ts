@@ -1,7 +1,7 @@
 ---
 title: Yan Cui
 date: "2019-07-24T13:00:00.284Z"
-description: "Yan Cui, known online as theburningmonk, is an AWS Serverless Hero, consultant, speaker, and author."
+description: "Yan Cui, known online as theburningmonk, is an independent consultant, speaker, and blogger. Yan is also the author of Production-Ready Serverless and a Developer Advocate at Lumigo."
 ---
 
 ![Yan Cui](./yan-cui.jpg)
