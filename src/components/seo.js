@@ -24,7 +24,7 @@ function SEO({ description, lang, meta, title }) {
           sourceInstanceName: { eq: "assets" }
         ) {
           childImageSharp {
-            fluid {
+            fluid(quality: 100) {
               src
             }
           }
@@ -50,7 +50,9 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        title ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.title
+      }
       meta={[
         {
           name: `description`,
@@ -82,7 +84,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:site`,
