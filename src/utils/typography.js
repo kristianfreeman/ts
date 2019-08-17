@@ -1,13 +1,18 @@
 import Typography from "typography"
 import Irving from "typography-theme-irving"
 
-Irving.overrideThemeStyles = () => {
+Irving.overrideThemeStyles = ({ rhythm }) => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    h4: {
+      fontSize: rhythm(3 / 4),
+    },
   }
 }
+
+Irving.baseLineHeight = 1.666
 
 const typography = new Typography(Irving)
 

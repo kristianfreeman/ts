@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Logo from "./logo"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -11,44 +12,59 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
+        <div
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "20px",
           }}
         >
-          <Link
+          <Logo />
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              flex: 1,
+              ...scale(1.5),
+              marginBottom: 0,
+              marginTop: 0,
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h1>
+        </div>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <Logo />
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              flex: 1,
+              fontFamily: `Montserrat, sans-serif`,
+              marginBottom: 0,
+              marginTop: 0,
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h3>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h3>
+        </div>
       )
     }
     return (
