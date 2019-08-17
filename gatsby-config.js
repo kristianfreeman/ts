@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Think Serverless`,
-    author: `Kyle Mathews`,
+    author: `Think Serverless`,
     description: `Interviews and stories about the future of software development, using Serverless technology.`,
     siteUrl: `https://thinkserverless.dev/`,
     social: {
