@@ -1,6 +1,6 @@
 ---
 title: Yan Cui
-date: "2019-08-20T13:00:00.284Z"
+date: "2019-08-20T15:30:00.00Z"
 description: "[Yan Cui](https://twitter.com/theburningmonk), known online as theburningmonk, is an independent consultant, speaker, and blogger. Yan is also the author of [Production-Ready Serverless](https://www.manning.com/livevideo/production-ready-serverless) and a Developer Advocate at [Lumigo](https://lumigo.io/)."
 featuredImage: ./yan-cui.jpg
 ---
