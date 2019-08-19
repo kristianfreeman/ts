@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import removeMd from "remove-markdown"
 
 function SEO({ description, lang, meta, title }) {
   const {
@@ -42,6 +43,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const socialMetaDescription = removeMd(metaDescription)
   const url = site.siteMetadata.siteUrl.slice(0, -1)
   const siteTitle = title
     ? `${title} | ${site.siteMetadata.title}`
@@ -64,7 +66,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: socialMetaDescription,
         },
         {
           property: `og:type`,
@@ -80,7 +82,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `twitter:description`,
-          content: metaDescription,
+          content: socialMetaDescription,
         },
         {
           name: `twitter:card`,
@@ -96,7 +98,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: socialMetaDescription,
         },
       ].concat(meta)}
     />
