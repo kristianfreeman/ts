@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Markdown from "../components/markdown"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -34,10 +35,8 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
+              <Markdown
+                content={node.frontmatter.description || node.excerpt}
               />
             </div>
           )
