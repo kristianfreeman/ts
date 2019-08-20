@@ -4,19 +4,9 @@ import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Markdown from "../components/markdown"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-
-import showdown from "showdown"
-
-const converter = new showdown.Converter()
-
-const MarkdownContent = ({ content, style }) => (
-  <div
-    style={style}
-    dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }}
-  />
-)
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -59,7 +49,7 @@ class BlogPostTemplate extends React.Component {
           </h1>
         </div>
 
-        <MarkdownContent
+        <Markdown
           content={post.frontmatter.description}
           style={{
             display: `block`,
