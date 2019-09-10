@@ -1,7 +1,7 @@
 ---
-title: Gillian Armstrong
+title: "Delivering business value through serverless, with Gillian Armstrong"
 date: "2019-09-11T15:30:00.00Z"
-description: "[Gillian Armstrong TODO LINK](https://twitter.com/), bio bio bio"
+description: "Gillian Armstrong works as a Technologist in Liberty IT. Her current passions are understanding the changing paradigms that Serverless is bringing to Software Architecture, and that Cognitive Technology is bringing to Human-Computer Interaction. [Follow her on Twitter](https://twitter.com/virtualgill)!"
 featuredImage: ./gillian-armstrong.jpg
 ---
 
@@ -9,7 +9,7 @@ featuredImage: ./gillian-armstrong.jpg
 
 Hi! I'm Gillian and I work as a Technologist for Liberty Information Technology in Belfast, Northern Ireland. We create world-class software and solutions for our parent company, Liberty Mutual Insurance.
 
-I had always loved problem solving and learning new things, but I had never considered being a software engineer until I did some programming modules at university and discovered I really enjoyed it. Since graduating I have worked across a lot of different technologies, everything from huge monolithic applications, to brand new builds on the latest technologies.
+I had always loved problem solving and learning new things, but I had never considered being a software engineer until I did some programming modules at university and discovered I really enjoyed it. Since graduating, I have worked across a lot of different technologies, everything from huge monolithic applications, to brand new builds on the latest technologies.
 
 Several years ago, I moved into our company's Emerging Tech group, and got to work building out internal software and helping to bring in new technology into the company. When I first started that was things like microservices, but in the past couple years that has evolved out into the Cloud, and then into Serverless and Applied AI.
 
@@ -25,7 +25,7 @@ Going one step beyond just Cloud and using Serverless let us move even faster, a
 
 Since it was the first project we had worked on with this architectural pattern we certainly had challenges too - there was a lot of documentation to read, we needed to rethink how we adapted all our standard engineering best practices like CI/CD and testing to the new patterns. We had new things like think about - like understanding how to build for truly ephemeral infrastructure, or everyone's favourite - lambda cold starts (especially in our VPC). And although we love to see the speed of innovation and new features coming from AWS, sometimes we went onto twitter in the morning to find that work we had spent the last few weeks doing could now be replaced with a single line of code to use a new built-in feature. Being able to quickly change your code is critical to being able to take advantage of new functionality or best practices!
 
-Ultimately the project was a big success - we found that the Employee Digital Assistant was so useful to our own employees that we've actually created a spin off company, Workgrid, to provide the same functionality as a SaaS product to other companies.
+Ultimately the project was a big success - we found that the Employee Digital Assistant was so useful to our own employees that we've actually created a spin off company, [Workgrid](https://www.workgrid.com/), to provide the same functionality as a SaaS product to other companies.
 
 #### What excites you most right now about the serverless paradigm?
 
@@ -53,4 +53,4 @@ I think everyone gets a little rush of excitement when they start out, because i
 
 #### What your favorite resources for learning more about the serverless ecosystem? (People, blogs, etc)
 
-There is so much available out there! As I'm working mostly in the AWS space, I mostly follow the content that the AWS Serverless Heros are producing. They are also great people to reach out to if you have questions. I also have really enjoyed attending several of the ServerlessDays conferences - there are ones all over the world and you get a really wide view of lots of different technologies.
+There is so much available out there! As I'm working mostly in the AWS space, I mostly follow the content that the [AWS Serverless Heroes](https://aws.amazon.com/developer/community/heroes/?community-heroes-all.sort-by=item.additionalFields.sortPosition&community-heroes-all.sort-order=asc&awsf.filter-hero-category=heroes%23serverless) are producing. They are also great people to reach out to if you have questions. I also have really enjoyed attending several of the [ServerlessDays conferences](https://serverlessdays.io/) - there are ones all over the world and you get a really wide view of lots of different technologies.

@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Markdown from "../components/markdown"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import styles from "../styles.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <div
+            class="mobile-hide"
             style={{
               flex: 1,
               marginRight: "16px",
@@ -44,7 +46,7 @@ class BlogPostTemplate extends React.Component {
               }}
             />
           </div>
-          <h1 style={{ flex: 1, ...scale(2), marginTop: rhythm(1) }}>
+          <h1 style={{ flex: 1, ...scale(1), marginTop: rhythm(1) }}>
             {post.frontmatter.title}
           </h1>
         </div>
@@ -124,7 +126,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fluid(maxHeight: 50, maxWidth: 50) {
+            fluid(maxHeight: 100, maxWidth: 100) {
               ...GatsbyImageSharpFluid
               presentationHeight
               presentationWidth
