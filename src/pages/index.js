@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -23,8 +24,30 @@ class BlogIndex extends React.Component {
         <Bio />
         {publishedPosts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          let featuredImgFluid =
+            node.frontmatter.featuredImage.childImageSharp.fluid
           return (
-            <div key={node.fields.slug}>
+            <div key={node.fields.slug} style={{ paddingBottom: "1rem" }}>
+              <div
+                class="mobile-hide"
+                style={{
+                  flex: 1,
+                  marginRight: "16px",
+                  marginBottom: "16px",
+                  maxHeight: featuredImgFluid.presentationHeight,
+                  maxWidth: featuredImgFluid.presentationWidth,
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Img
+                    fluid={featuredImgFluid}
+                    imgStyle={{
+                      border: "3px hsla(0,0%,0%,0.5) solid",
+                      borderRadius: "999px",
+                    }}
+                  />
+                </Link>
+              </div>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
@@ -66,6 +89,15 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxHeight: 100, maxWidth: 100) {
+                  ...GatsbyImageSharpFluid
+                  presentationHeight
+                  presentationWidth
+                }
+              }
+            }
           }
         }
       }

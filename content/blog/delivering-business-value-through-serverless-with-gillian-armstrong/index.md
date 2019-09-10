@@ -1,7 +1,7 @@
 ---
 title: "Delivering business value through serverless, with Gillian Armstrong"
-date: "2019-09-11T15:30:00.00Z"
-description: "Gillian Armstrong works as a Technologist in Liberty IT. Her current passions are understanding the changing paradigms that Serverless is bringing to Software Architecture, and that Cognitive Technology is bringing to Human-Computer Interaction. [Follow her on Twitter](https://twitter.com/virtualgill)!"
+date: "2019-09-10T11:00:00.00Z"
+description: "[Gillian Armstrong](https://twitter.com/virtualgill) works as a Technologist in Liberty IT. Her current passions are understanding the changing paradigms that Serverless is bringing to Software Architecture, and that Cognitive Technology is bringing to Human-Computer Interaction."
 featuredImage: ./gillian-armstrong.jpg
 ---
 
