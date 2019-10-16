@@ -1,6 +1,6 @@
 ---
 title: "Serverless systems in production with Lynn Langit"
-date: "2019-10-16T11:00:00.00Z"
+date: "2019-10-17T11:00:00.00Z"
 description: "[Lynn Langit](https://lynnlangit.com) is a cloud architect who codes, building efficient serverless or container-based bioinformatics cloud data pipelines world-wide."
 featuredImage: ./lynn-langit.jpg
 ---
